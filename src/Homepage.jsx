@@ -1,5 +1,5 @@
 import Navbar from "./Navbar";
-import Text from "./text";
+import Text from "./Text";
 import Pgrid from "./Pgrid";
 import './Homepage.css'
 function Homepage() {
