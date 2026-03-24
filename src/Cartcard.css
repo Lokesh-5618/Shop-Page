@@ -1,0 +1,63 @@
+.ccontainer {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: rgb(72, 72, 72);
+
+    padding: 40px;
+
+
+
+}
+
+
+
+.cmiddle {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-top: 43px;
+    margin: auto;
+    font-size: xx-large;
+
+}
+
+.cleft {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 30%;
+    background-color: rgb(255, 174, 69);
+    padding: 20px;
+    text-align: center;
+
+
+}
+
+.cmodder {
+    display: flex;
+    gap: 25px;
+}
+
+.cprice {
+    margin: auto;
+    color: aliceblue;
+}
+
+.ctitle {
+    width: 250px;
+}
+
+.cright {
+    font-size: x-large;
+    margin: auto;
+    background-color: wheat;
+    padding: 10px;
+}
+
+input {
+    text-align: center;
+    font-size: 12pt;
+}

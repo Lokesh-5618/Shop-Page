@@ -1,0 +1,29 @@
+.nav {
+    display: flex;
+
+    background-color: rgb(31, 31, 31);
+    color: black;
+    padding: 20px;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    justify-content: space-between;
+    color: bisque;
+    font-size: 20px;
+    margin-top: 0;
+
+}
+
+.navright {
+    display: flex;
+
+    gap: 50px;
+}
+
+button {
+    all: unset;
+
+
+}
+
+button:hover {
+    color: red;
+}
