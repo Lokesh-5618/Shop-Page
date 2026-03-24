@@ -1,15 +1,9 @@
 import { useState } from 'react'
 
-import viteLogo from '/vite.svg'
 import './App.css'
-import Text from './Text'
-import Navbar from './Navbar'
-import Pgrid from './Pgrid'
-import Homepage from './Homepage'
-import Spcard from './Spcard'
-import Spcardcontainer from './Spcardcontainer'
+
 import Shoppage from './Shoppage'
-import Cartcard from './Cartcard'
+
 import Cartcardcontainer from './Cartcardcontainer'
 
 
