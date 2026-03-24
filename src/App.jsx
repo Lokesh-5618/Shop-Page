@@ -2,7 +2,7 @@ import { useState } from 'react'
 
 import viteLogo from '/vite.svg'
 import './App.css'
-import Text from './text'
+import Text from './Text'
 import Navbar from './Navbar'
 import Pgrid from './Pgrid'
 import Homepage from './Homepage'
