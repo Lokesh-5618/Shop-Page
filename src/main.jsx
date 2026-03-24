@@ -10,6 +10,10 @@ import { CartProvider } from './CartContext';
 
 const router = createBrowserRouter([
   {
+    path: "/",
+    element: <Homepage></Homepage>
+  },
+  {
     path: "Shop-Page",
     element: <Homepage></Homepage>
   },
