@@ -1,63 +1,131 @@
 .ccontainer {
-    width: 60%;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 20px;
-    background-color: rgb(72, 72, 72);
-
-    padding: 40px;
-
-
-
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    border-bottom: 1px solid #eee;
+    background: #fff;
+    gap: 12px;
 }
 
-
-
-.cmiddle {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    padding-top: 43px;
-    margin: auto;
-    font-size: xx-large;
-
+.ccontainer:last-child {
+    border-bottom: none;
 }
 
 .cleft {
     display: flex;
+    align-items: center;
+    gap: 12px;
+    flex: 1;
+}
+
+.cleft img {
+    border-radius: 8px;
+    object-fit: cover;
+    background: #f4f4f4;
+    flex-shrink: 0;
+}
+
+.title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #222;
+    max-width: 140px;
+    word-break: break-word;
+}
+
+.cmiddle {
+    display: flex;
     flex-direction: column;
-    gap: 5px;
-    width: 30%;
-    background-color: rgb(255, 174, 69);
-    padding: 20px;
-    text-align: center;
-
-
+    align-items: center;
+    gap: 6px;
+    flex-shrink: 0;
 }
 
 .cmodder {
     display: flex;
-    gap: 25px;
+    align-items: center;
+    gap: 6px;
+}
+
+.cmodder button {
+    width: 28px;
+    height: 28px;
+    border: 1.5px solid #d0d0d0;
+    background: #f7f7f7;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #444;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.15s ease;
+    padding: 0;
+}
+
+.cmodder button:hover {
+    background: #e8e8e8;
+}
+
+.ip {
+    width: 44px;
+    height: 28px;
+    text-align: center;
+    border: 1.5px solid #d0d0d0;
+    border-radius: 5px;
+    font-size: 0.875rem;
+    color: #222;
+    outline: none;
+}
+
+.ip:focus {
+    border-color: #4f8ef7;
+}
+
+.ip::-webkit-inner-spin-button,
+.ip::-webkit-outer-spin-button {
+    -webkit-appearance: none;
 }
 
 .cprice {
-    margin: auto;
-    color: aliceblue;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #4f8ef7;
 }
 
-.ctitle {
-    width: 250px;
+.cright button {
+    background: transparent;
+    border: 1.5px solid #f26b6b;
+    color: #f26b6b;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.15s ease, color 0.15s ease;
+    white-space: nowrap;
 }
 
-.cright {
-    font-size: x-large;
-    margin: auto;
-    background-color: wheat;
-    padding: 10px;
+.cright button:hover {
+    background: #f26b6b;
+    color: #fff;
 }
 
-input {
-    text-align: center;
-    font-size: 12pt;
+@media (max-width: 480px) {
+    .ccontainer {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .cleft {
+        flex: 1 1 100%;
+    }
+
+    .cmiddle {
+        flex-direction: row;
+        justify-content: space-between;
+        flex: 1;
+    }
 }
