@@ -1,29 +1,38 @@
 .nav {
     display: flex;
-
-    background-color: rgb(31, 31, 31);
-    color: black;
-    padding: 20px;
-    border-bottom: 2px solid rgb(0, 0, 0);
+    align-items: center;
     justify-content: space-between;
-    color: bisque;
-    font-size: 20px;
-    margin-top: 0;
+    padding: 14px 32px;
+    background: #fff;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
 
+.nav a {
+    text-decoration: none;
+    color: #444;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: color 0.15s ease;
+}
+
+.nav a:hover {
+    color: #4f8ef7;
 }
 
 .navright {
     display: flex;
-
-    gap: 50px;
+    gap: 24px;
 }
 
-button {
-    all: unset;
+@media (max-width: 480px) {
+    .nav {
+        padding: 12px 16px;
+    }
 
-
-}
-
-button:hover {
-    color: red;
+    .navright {
+        gap: 16px;
+    }
 }
