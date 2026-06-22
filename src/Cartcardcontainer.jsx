@@ -4,6 +4,7 @@ import Navbar from "./Navbar";
 import './Cartcardcontainer.css'
 function Cartcardcontainer() {
     const { arr, setArr } = useCart();
+    console.log(arr);
     let totalprice = 0;
     for (let i = 0; i < arr.length; i++) {
         totalprice += (arr[i].count * arr[i].price)
